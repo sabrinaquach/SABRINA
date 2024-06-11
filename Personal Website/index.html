@@ -8,10 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet"> -->
   </head>
   <body>
     <nav id="navbar" class="nav">
@@ -31,14 +27,13 @@
       </ul>
     </nav>
 
-    <div class="container">
     <main>
-      <section id="welcome-section" class="welcome-section">
+      <section id="welcome-section" class="container welcome-section">
         <h1>HELLO, I AM SABRINA!</h1>
         <p>THIS IS MY PERSONAL WEBSITE :)</p>
       </section>
 
-      <section id="aboutme" class="aboutme-section">
+      <section id="aboutme" class="container aboutme-section">
         <p>My name is Sabrina Quach and I am currently attending college at San Jose 
            State University. I am pursuing my bachelor's degree in Computer Engineering
            with a minor in Interaction Design. 
@@ -47,35 +42,26 @@
            <a class="more-lang" href="#lang-more">many more</a>. I am eager for new opportunities to learn 
            and grow as a rising developer. I look forward to being with you as I begin my 
            journey towards web development, thank you!
-           
         </p>
       </section>
 
-      <section id="projects" class="projects-section">
+      <section id="projects" class="container projects-section">
         <h2 class="project-title">HERE ARE SOME OF MY PROJECTS</h2>
         <div class="project-grid">
-          <a class="project-tile">
-            <link href=""/>
-            Personal Website
-          </a>
-          <a class="project-tile">
-            <link href=""/>
-            Documentation Website
-          </a>
-         <a class="project-tile"
-             href="../Personal Website/Projects/TakuSatohBookletPrint_SabrinaQuach_DSGD83_11142023.pdf">
-            Taku Satoh Booklet
-         </a>
+          <a class="project-tile" href="#">Personal Website</a>
+          <a class="project-tile" href="#">Documentation Website</a>
+          <a class="project-tile" href="../Personal Website/Projects/TakuSatohBookletPrint_SabrinaQuach_DSGD83_11142023.pdf">Taku Satoh Booklet</a>
         </div>
       </section>
       
-      <section id="contact" class="contact-section">
-        <a id="profile-link" target="_blank">GITHUB</a>
-        <a id="profile-link" target="_blank">EMAIL</a>
-        <a id="profile-link" target="_blank">PHONE NUMBER</a>
+      <h2 class="contact-title">CONTACT ME</h2>
+      <section id="contact" class="container contact-section">
+        <a id="profile-link" href="#" target="_blank">GITHUB</a>
+        <a id="profile-link" href="#" target="_blank">EMAIL</a>
+        <a id="profile-link" href="#" target="_blank">PHONE NUMBER</a>
       </section>
 
-      <section id="lang-more" class="lang-more-section">
+      <section id="lang-more" class="container lang-more-section">
         <h2>Front-End</h2>
         <ul>
             <li>HTML</li>
@@ -90,9 +76,8 @@
       </section>
     </main>
 
-    <footer id="footer">
+    <footer id="footer" class="container">
         <p>&copy; 2024 sabrinaquach. All rights reserved.</p>
     </footer>
-    </div>
   </body>
 </html>
