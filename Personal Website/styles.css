@@ -1,8 +1,9 @@
+/* GLOBAL VARIABLES START */
 :root {
     --darkgreen-main: #588157;
     --lightgreen-hover: #a3b18a;
     --header-colors: #588157;
-    --page-background: #e7e1d3;
+    --page-background: #fdf0d5;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,8 +15,9 @@
 body {
     font-family: 'VT323', sans-serif;
     font-size: 25px;
-    background: var(--page-background); /* Set the background color for the entire page */
-    margin: 0;
+    background: var(--page-background); 
+    /* same margin and padding for whole page */
+    margin: 0;      
     padding: 0;
 }
 
@@ -28,6 +30,11 @@ h1, h2 {
 
 a {
     text-decoration: none;
+    color: var(--darkgreen-main);
+}
+
+a:hover {
+    color: var(--lightgreen-hover);
 }
 
 ul {
@@ -40,7 +47,10 @@ ul {
     padding: 20px 0; /* Add padding to separate sections */
     background: var(--page-background); /* Ensure sections have the same background */
 }
+/* GLOBAL VARIABLES END */
 
+
+/* NAV-BAR START */
 .nav {
     display: flex;
     justify-content: flex-end;
@@ -66,7 +76,10 @@ ul {
 .nav-list a:hover {
     color: var(--lightgreen-hover);
 }
+/* NAV-BAR END */
 
+
+/* WELCOME SECTION START */
 .welcome-section {
     display: flex;
     flex-direction: column;
@@ -82,23 +95,45 @@ ul {
     font-style: none;
     color: #d5bdaf;
 }
+/* WELCOME SECTION END */
 
+
+/* CONTACT SECTION START */
 .contact-section {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
+/* CONTACT SECTION END */
 
-a {
-    color: var(--darkgreen-main);
+
+/* PROJECT SECTION START */
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
 }
 
-a:hover {
-    color: var(--lightgreen-hover);
+.project-tile {
+    border: 3px solid #ccd5ae;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
 }
+/* PROJECT SECTION END */
 
+
+/* LANUAGES SECTION START */
+.box-one {
+    border: 3px solid black;
+}
+/* LANUAGES SECTION END */
+
+
+/* FOOTER START */
 footer {
     background-color: var(--page-background);
     text-align: center;
     padding: 10px;
 }
+/* FOOTER END */
